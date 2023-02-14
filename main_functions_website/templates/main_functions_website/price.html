@@ -1,0 +1,17 @@
+{% extends 'main_functions_website/base.html' %}
+
+{% block content %}
+    <div id="table-price-list">
+        {% for sentences in title %}
+                <div class="table-title">{{ sentences }}</div>
+                {% for price_element in price %}
+                    {% if sentences == price_element.group_price.name %}
+                        <div class="table-subtitle-price">
+                            <div class="table-subtitle">{{ price_element.subtitle }}</div>
+                            <div class="table-price">{{ price_element.price}}</div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+        {% endfor %}
+    </div>
+{% endblock %}

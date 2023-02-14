@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/main_functions_website/css/general.css' %}">
+    <link rel="stylesheet" href="{% static '/main_functions_website/css/header.css' %}">
+    <link rel="stylesheet" href="{% static '/main_functions_website/css/main.css' %}">
+    <link rel="stylesheet" href="{% static '/main_functions_website/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static '/main_functions_website/css/pages/price.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="/main_functions_website/images/favicon.png" type="images/png">
+    <title>Ветеринарная служба Dale vet</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="above_menu">
+            <div class="phones">
+                <div class="number-phone">
+                    <img class="img-phone" src="/static/main_functions_website/images/phone.png" width="20" height="20">8-999-999-99-99
+                </div>
+                <div class="number-phone">
+                    <img class="img-phone" src="/static/main_functions_website/images/phone.png" width="20" height="20">8-999-999-99-99
+                </div>
+            </div>
+            <div class="logo">
+                <a href="/"><img class="img-logo" src="/static/main_functions_website/images/logo.png"></a>
+                <div class="description-under-logo">
+                    <a href="/">Выездная ветеринарная служба <b>DaLe vet</b></a>
+                </div>
+            </div>
+            <button class="btn-call-doctor">Вызвать врача</button>
+        </div>
+         <nav class="menu">
+            <a class="block-menu-start">О нас</a>
+            <a class="block-menu">Услуги</a>
+            <a class="block-menu" href="/article/">Статьи</a>
+            <a class="block-menu" href="/price/">Цены</a>
+            <a class="block-menu">Отзывы</a>
+            <a class="block-menu-end">Контакты</a>
+         </nav>
+    </div>
+</header>
+<main id="swup" class="transition-fade">
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-menu-author">
+            <div class="block-nav-menu">
+                <div class="footer-nav-menu">
+                    Контакты
+                    <div class="footer-phone">
+                        <img class="img-phone" src="/static/main_functions_website/images/phone.png" width="20" height="20">8-999-999-99-99
+                    </div>
+                    <div class="footer-phone">
+                        <img class="img-phone" src="/static/main_functions_website/images/phone.png" width="20" height="20">8-999-999-99-99
+                    </div>
+                </div>
+                <div class="footer-nav-menu">
+                    Информация
+                    <a class="footer-link-nav-menu">Статьи</a>
+                    <a class="footer-link-nav-menu">Цены</a>
+                    <a class="footer-link-nav-menu">Услуги</a>
+                </div>
+                <div class="footer-nav-menu">
+                    Услуги
+                    <a class="footer-link-nav-menu">Лечение грызунов</a>
+                    <a class="footer-link-nav-menu">Лечение собак</a>
+                    <a class="footer-link-nav-menu">Лечение кошек</a>
+                    <a class="footer-link-nav-menu">Лечение рептилий</a>
+                    <a class="footer-link-nav-menu">Лечение экзотов</a>
+                </div>
+            </div>
+            <div class="block-footer-author">
+                <h2 class="footer-author">
+                    Автор сайта:
+                    <a class="footer-link-author" href="https://vk.com/eleshud" target="_blank">
+                        Эльес Худайбердиев
+                        <img class="img-vk" src="/static/main_functions_website/images/vk.png" width="17px" height="17px">
+                    </a>
+                </h2>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="/static/main_functions_website/js/jquery-3.6.0.min.js"></script>
+<script src="/static/main_functions_website/js/swup.min.js"></script>
+<script src="/static/main_functions_website/js/main.js"></script>
+<script> const swup = new Swup();</script>
+</body>
+</html>
